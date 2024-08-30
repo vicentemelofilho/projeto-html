@@ -79,6 +79,60 @@
         <p></p>
         <button type="reset">Reset</button>
         <button type="submit">Enviar</button>
+
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite a senha">
+        </p>
+        
+        <p>
+            <label for="range">Valor:</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2">
+        </p> 
+
+        <p>
+            <label for="range2">Valor 2:</label>
+            <input type="range" id="range2" name="range2" list="lista">
+        </p>
+
+        <datalist id="lista">
+            <option value="0" label="0%"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50" label="50%"></option>
+            <option value="60" label="0%"></option>
+            <option value="70" label="0%"></option>
+            <option value="80" label="0%"></option>
+            <option value="90" label="0%"></option>
+            <option value="100" label="100%"></option>
+        </datalist>
+
+        <p>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+        
+        <p>
+            <label for="search">search:</label>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p> 
+
+        <p>
+            <label for="select">Selecione:</label>
+            <select id="select" name="select">
+                <option>1</option>
+                <option>2</option>
+                <option selected>3</option>
+            </select>
+        </p> 
+
+        <p>
+            <label for="textarea">textarea:</label>
+            <textarea id="textarea" name="textarea" row="4" cols="12">Texto aqui dentro
+            </textarea>
+        </p>         
     </form>
 
 </body>
