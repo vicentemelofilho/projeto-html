@@ -9,6 +9,10 @@
             font-family: sans-serif;
         }
 
+        label {
+            cursor: pointer;
+            /* display: block; */
+        }
     </style>
 </head>
 <body>
@@ -17,9 +21,64 @@
         <p>O formulário</p>
 
         <fieldset>
-            <legend>Descrição</legend>
-            <input type="text">
+            <legend>Nome</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
         </fieldset>
+        <fieldset>
+            <legend>Sobrenome</legend>
+            <input type="text" id="sobrenome" name="sobrenome" value="Melo" disabled readonly>
+
+        </fieldset>
+        <label>
+            Outro campo
+            <input type="text" id="outro" name="outro">
+        </label>
+
+        <p>
+            <label for="dev">Sou um dev:</label>
+            <input type="checkbox" id="dev" name="dev">               
+        </p>
+
+        <p>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" value="2024-08-30">               
+        </p>        
+     
+        <p>
+            <label for="datetime">Data hora:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2024-08-30T20:00">               
+        </p>
+
+         
+        <p>
+            <label for="time">Data hora:</label>
+            <input type="time" id="time" name="time" value="20:00:15">               
+        </p>        
+
+        <p>
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">               
+        </p>        
+
+        <p>
+            <label for="email">Cor:</label>
+            <input type="email" id="email" name="email" placeholder="informe o email">               
+        </p>
+
+        <p>
+            <label for="foto">Sua foto:</label>
+            <input type="file" id="foto" name="foto" accept=".png, .svg, image/*" multiple>
+        </p>
+
+        <p>
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number" min="10" max="50">
+        </p>  
+
+        <p></p>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
     </form>
 
 </body>
